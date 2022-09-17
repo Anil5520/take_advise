@@ -13,3 +13,7 @@ With the help of Adrian Hajdin - JS Mastery @adrianhajdin, I've created this app
 I've made get requests to Advice Slip JSON API.(https://api.adviceslip.com/). This is the API which gives us random advises.
 
 I've used used 'Brawler' font from Google font to show it better. you can visit here for font.(https://fonts.google.com/specimen/Brawler?query=Brawler)
+
+### `website`
+
+You can access the website by given link https://get-advise-with-anil.netlify.app/
