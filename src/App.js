@@ -1,5 +1,5 @@
 import React from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 
 import './App.css';
 
@@ -9,7 +9,17 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log('component did mount');
+    this.fetchAdvice();
+  }
+
+  fetchAdvice = () => {
+    axios.get('https://api.adviceslip.com/advice')
+      .then((response) => {
+        console.log(response)
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }
 
 
