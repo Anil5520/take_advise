@@ -27,11 +27,18 @@ class App extends React.Component {
 
 
   render() {
-    const {advice}=this.state
     return (
-      <h1>{advice}</h1>
+      <div className="app">
+        <div className="card">
+          <h1 className="heading">{this.state.advice}</h1>
+          <button className="button" onClick={this.fetchAdvice}>
+            <span>GIVE ME ADVICE !</span>
+          </button>
+        </div>
+      </div>
     );
   }
 }
+
 
 export default App;
